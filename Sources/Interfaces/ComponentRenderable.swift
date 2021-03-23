@@ -37,7 +37,9 @@ internal extension ComponentRenderable {
 
         renderedComponent?.contentDidEndDisplay(content)
     }
+}
 
+public extension ComponentRenderable {
     /// Render given componet to container.
     ///
     /// - Parameter:

@@ -40,19 +40,19 @@ private struct ComponentRepresenting<C: Component>: UIViewRepresentable {
     }
 }
 
-private final class UIComponentView: UIView, ComponentRenderable {
+public final class UIComponentView: UIView, ComponentRenderable {
     @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
 
         backgroundColor = .clear
     }
 
-    override var intrinsicContentSize: CGSize {
+    public override var intrinsicContentSize: CGSize {
         if let referenceSize = renderedComponent?.referenceSize(in: bounds) {
             return referenceSize
         }
