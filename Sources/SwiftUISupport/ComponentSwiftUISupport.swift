@@ -63,6 +63,14 @@ public final class UIComponentView: UIView, ComponentRenderable {
             return super.intrinsicContentSize
         }
     }
+    
+    public override func willMove(toSuperview newSuperview: UIView?) {
+        if newSuperview != nil {
+            contentWillDisplay()
+        } else {
+            contentDidEndDisplay()
+        }
+    }
 }
 
 private final class ComponentViewProxy {
