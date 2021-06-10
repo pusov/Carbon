@@ -4,7 +4,7 @@ public protocol Updater {
     associatedtype Target: AnyObject
 
     /// A type that represents an adapter holding the data to be rendered.
-    associatedtype Adapter: Carbon.Adapter
+    associatedtype Adapter: CarbonKit.Adapter
 
     /// Prepares given target and adapter.
     ///
