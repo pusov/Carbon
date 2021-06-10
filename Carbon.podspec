@@ -1,5 +1,5 @@
 Pod::Spec.new do |spec|
-  spec.name = 'CarbonKit'
+  spec.name = 'Carbon'
   spec.version  = '1.0.0-rc.6'
   spec.author = { 'ra1028' => 'r.fe51028.r@gmail.com' }
   spec.homepage = 'https://github.com/ra1028/Carbon'
@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   spec.source_files = 'Sources/**/*.swift'
   spec.license = { :type => 'Apache 2.0', :file => 'LICENSE' }
   spec.requires_arc = true
-#  spec.swift_versions = ['5.4']
+  spec.swift_versions = ['5.1']
   spec.ios.deployment_target = '10.0'
   spec.dependency 'DifferenceKit/Core', "~> 1.1"
   spec.ios.frameworks = 'UIKit'
